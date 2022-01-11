@@ -18,4 +18,11 @@
     <li class="list-group-item">
         Telefono : @Model.Telefono
     </li>
+    <li class="list-group-item">
+    <a asp-controller="Doctores"
+       asp-action="DoctoresHospital"
+       asp-route-idhospital="@Model.IdHospital">
+        Doctores
+    </a>
+</td></li>
 </ul>

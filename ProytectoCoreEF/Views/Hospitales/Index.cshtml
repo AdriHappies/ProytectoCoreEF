@@ -15,10 +15,20 @@
             <td>@h.Nombre</td>
             <td>@h.Direccion</td>
             <td>@h.Telefono</td>
-            <td><a asp-controller="Hospitales"
+            <td>
+                <a asp-controller="Hospitales"
                    asp-action="Details"
-                   asp-route-idhospital ="@h.IdHospital">
-                Detalles</a></td>
+                   asp-route-idhospital="@h.IdHospital">
+                    Detalles
+                </a>
+            </td>
+            <td>
+                <a asp-controller="Doctores"
+                   asp-action="DoctoresHospital"
+                   asp-route-idhospital="@h.IdHospital">
+                    Doctores
+                </a>
+            </td>
         </tr>
         }
     </tbody>

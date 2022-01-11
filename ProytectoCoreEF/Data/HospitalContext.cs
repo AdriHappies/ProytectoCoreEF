@@ -14,5 +14,6 @@ namespace ProytectoCoreEF.Data
 
         //mapeo de las clases de ddbb
         public DbSet<Hospital> Hospitales { get; set; }
+        public DbSet<Doctor> Doctores { get; set; }
     }
 }
